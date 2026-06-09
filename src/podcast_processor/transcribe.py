@@ -224,7 +224,6 @@ class OpenAIWhisperTranscriber(Transcriber):
                         compression_ratio=s.get("compression_ratio") or 0.0,
                         no_speech_prob=s.get("no_speech_prob") or 0.0,
                         seek=s.get("seek", 0) or 0,
-                        transient=s.get("transient"),
                     )
                     for i, s in enumerate(raw_segments)
                 ]
